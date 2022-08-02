@@ -30,69 +30,59 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row">
-        <div class="col-2 hour">9am</div>
-        <textarea id="9" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
-      </div>  
-      <div class="row">
-        <div class="col-2 hour">10am</div>
-        <textarea id="10" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour8" class="row time-block">
+        <div class="col-md-1 hour">8 AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">11am</div>
-        <textarea id="11" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour9" class="row time-block">
+        <div class="col-md-1 hour">9 AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">12pm</div>
-        <textarea id="12" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour10" class="row time-block">
+        <div class="col-md-1 hour">10 AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">1pm</div>
-        <textarea id="13" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour10=1" class="row time-block">
+        <div class="col-md-1 hour">11 AM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">2pm</div>
-        <textarea id="14" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour12" class="row time-block">
+        <div class="col-md-1 hour">12 PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">3pm</div>
-        <textarea id="15" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour13" class="row time-block">
+        <div class="col-md-1 hour">1 PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">4pm</div>
-        <textarea id="16" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour14" class="row time-block">
+        <div class="col-md-1 hour">2 PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
-      <div class="row">
-        <div class="col-2 hour">5pm</div>
-        <textarea id="17" class="col-8" placeholder="Task"></textarea>
-        <button class="col-2 saveBtn"></button>
+      <div id="hour15" class="row time-block">
+        <div class="col-md-1 hour">3 PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour16" class="row time-block">
+        <div class="col-md-1 hour">4 PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div id="hour17" class="row time-block">
+        <div class="col-md-1 hour">5 PM</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
-      // function to show time on page
-      function showTime() {
-        let currentTime = document.getElementById("currentDay");
-        currentTime.innerText =  moment();
-      }
-      setInterval(showTime, 1000);
-
-      const timeDivs = document.getElementById("container");
-      const times = ["9am","10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
-      
-
-      
-      
-    </script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
