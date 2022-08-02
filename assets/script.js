@@ -1,4 +1,4 @@
-// displays current time
+// displays current date and time
 function showTime() {
     currentDay.innerText = moment().format('LLLL');
 }
@@ -13,7 +13,7 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
 
-
+    // reads current time and styles accordingly based on the current time
     function timeKeep() {
         let currentTime = moment().hour();
 
@@ -35,7 +35,6 @@ $(document).ready(function () {
             }
         })
     }
-    $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -45,6 +44,7 @@ $(document).ready(function () {
     $("#hour15 .description").val(localStorage.getItem("hour15"));
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
+    $("#hour18 .description").val(localStorage.getItem("hour18"));
 
 timeKeep();
 })
